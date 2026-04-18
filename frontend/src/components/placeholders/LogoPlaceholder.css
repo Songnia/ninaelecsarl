@@ -1,0 +1,35 @@
+.logo-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.35);
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: var(--fw-bold);
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.03);
+    white-space: nowrap;
+}
+
+.logo-placeholder--icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 8px;
+}
+
+.logo-placeholder--dark {
+    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.logo-placeholder__name {
+    letter-spacing: -0.02em;
+}

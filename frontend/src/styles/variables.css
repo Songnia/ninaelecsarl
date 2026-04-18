@@ -1,0 +1,113 @@
+/* ============================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ============================================/* Custom Properties & Design Tokens */
+:root {
+    /* Color System */
+    /* Primary */
+    --color-lime: #8CC63F;
+    --color-lime-dark: #A6E600;
+    /* Secondary */
+    --color-purple: #2F4FA3;
+    --color-purple-light: #3FA9D0;
+    /* Accent */
+    --color-yellow: #3FA9D0;;
+    --color-coral: #FF6B6B;
+    /* Neutrals */
+    --color-black: #0A0A0A;
+    --color-dark: #1A1A1A;
+    --color-gray-dark: #2D2D2D;
+    --color-gray: #6B6B6B;
+    --color-gray-light: #E5E5E5;
+    --color-cream: #F5F5F0;
+    --color-white: #FFFFFF;
+
+    /* Semantic Mappings */
+    --bg-light: var(--color-cream);
+    --bg-dark: var(--color-dark);
+    --bg-white: var(--color-white);
+    --bg-card: var(--color-gray-dark);
+
+    --text-primary: var(--color-dark);
+    --text-secondary: var(--color-gray);
+    --text-muted: #8A8A8A;
+
+    --text-on-dark: var(--color-white);
+    --text-on-dark-muted: var(--color-gray-light);
+
+    --accent-lime: var(--color-lime);
+    --accent-purple: var(--color-purple);
+    --accent-yellow: var(--color-yellow);
+
+    /* Typography Scale */
+    --font-display: 'Clash Display', 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'Cabinet Grotesk', 'General Sans', system-ui, sans-serif;
+
+    --text-hero: clamp(3.5rem, 8vw, 7rem);
+    --text-h1: clamp(2.5rem, 5vw, 4rem);
+    --text-h2: clamp(2rem, 4vw, 3rem);
+    --text-h3: clamp(1.5rem, 3vw, 2rem);
+    --text-xl: 1.25rem;
+    --text-lg: 1.125rem;
+    --text-base: 1rem;
+    --text-sm: 0.875rem;
+    --text-xs: 0.75rem;
+
+    /* Font Weights */
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Spacing Scale (8px base) */
+    --space-1: 0.25rem;
+    /* 4px */
+    --space-2: 0.5rem;
+    /* 8px */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.25rem;
+    /* 20px */
+    --space-6: 1.5rem;
+    /* 24px */
+    --space-8: 2rem;
+    /* 32px */
+    --space-10: 2.5rem;
+    /* 40px */
+    --space-12: 3rem;
+    /* 48px */
+    --space-16: 4rem;
+    /* 64px */
+    --space-20: 5rem;
+    /* 80px */
+    --space-24: 6rem;
+    /* 96px */
+    --space-32: 8rem;
+    /* 128px */
+
+    /* Radii */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-2xl: 2rem;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-float: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Z-index layers */
+    --z-base: 1;
+    --z-raised: 10;
+    --z-navbar: 200;
+}
