@@ -49,7 +49,7 @@ export default function ServicesPage() {
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                         {services.map((svc, i) => (
-                            <article key={svc.id} className={`service-row hover-lift ${i % 2 !== 0 ? 'service-row--reverse' : ''}`} style={{ backgroundColor: 'var(--color-black)', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', padding: 0, border: '1px solid #222' }}>
+                            <article key={svc.id} id={svc.id} className={`service-row hover-lift ${i % 2 !== 0 ? 'service-row--reverse' : ''}`} style={{ backgroundColor: 'var(--color-black)', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', padding: 0, border: '1px solid #222' }}>
                                 <div className="service-row__image" style={{ height: '100%', minHeight: '300px' }}>
                                     <img src={svc.img} alt={svc.title} className="asset-img" style={{ height: '100%', objectFit: 'cover' }} />
                                 </div>

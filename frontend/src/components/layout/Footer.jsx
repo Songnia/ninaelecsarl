@@ -37,10 +37,10 @@ export default function Footer() {
                 <div className="footer__col">
                     <h4 className="footer__heading" style={{ color: 'var(--color-white)' }}>Services</h4>
                     <ul>
-                        <li><span className="footer__link">Génie Électrique</span></li>
-                        <li><span className="footer__link">Architecture d'Intérieur</span></li>
-                        <li><span className="footer__link">Formation Technique</span></li>
-                        <li><span className="footer__link">Bureau d'Études</span></li>
+                        <li><Link to="/services#svc-detail-1" className="footer__link">Génie Électrique</Link></li>
+                        <li><Link to="/services#svc-detail-2" className="footer__link">Architecture d'Intérieur</Link></li>
+                        <li><Link to="/services#svc-detail-3" className="footer__link">Formation Technique</Link></li>
+                        <li><Link to="/services#svc-detail-4" className="footer__link">Bureau d'Études</Link></li>
                     </ul>
                 </div>
 

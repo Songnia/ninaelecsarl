@@ -52,6 +52,7 @@
     align-items: center;
     padding: var(--space-12) 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    scroll-margin-top: 100px; /* Offset for sticky navbar */
 }
 
 .service-row--reverse {
