@@ -10,10 +10,10 @@ import formation1 from '../../assets/branding/formation-1.webp'
 import starLime from '../../assets/svg/star-lime.svg'
 
 const services = [
-    { id: 'svc-1', img: field3, title: 'Génie Électrique', desc: 'Conception et réalisation de projets électriques : courant fort et courant faible.' },
-    { id: 'svc-2', img: field2, title: 'Architecture d\'Intérieur', desc: 'Aménagement et conception d\'espaces intérieurs fonctionnels et esthétiques.' },
-    { id: 'svc-3', img: formation1, title: 'Formation Technique', desc: 'Programmes de formation spécialisés dans les domaines de l\'ingénierie et de l\'électricité.' },
-    { id: 'svc-4', img: field4, title: 'Bureau d\'Études', desc: 'Analyse technique, plans d\'exécution et suivi de chantiers complexes.' },
+    { id: 'svc-1', img: field3, title: 'Génie Électrique', desc: 'Conception et réalisation de projets électriques : courant fort et courant faible.', target: 'svc-detail-1' },
+    { id: 'svc-2', img: field2, title: 'Architecture d\'Intérieur', desc: 'Aménagement et conception d\'espaces intérieurs fonctionnels et esthétiques.', target: 'svc-detail-2' },
+    { id: 'svc-3', img: formation1, title: 'Formation Technique', desc: 'Programmes de formation spécialisés dans les domaines de l\'ingénierie et de l\'électricité.', target: 'svc-detail-3' },
+    { id: 'svc-4', img: field4, title: 'Bureau d\'Études', desc: 'Analyse technique, plans d\'exécution et suivi de chantiers complexes.', target: 'svc-detail-4' },
 ]
 
 export default function ExpertiseSection() {
@@ -41,8 +41,8 @@ export default function ExpertiseSection() {
                             <div className="expertise__card-body" style={{ padding: '2rem' }}>
                                 <h3 className="expertise__card-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{svc.title}</h3>
                                 <p className="expertise__card-desc" style={{ color: 'var(--text-on-dark-muted)', marginBottom: '1.5rem' }}>{svc.desc}</p>
-                                <a href="/contact" className="expertise__card-link" style={{ color: 'var(--accent-purple-light)', fontWeight: 'bold' }}>
-                                    En Savoir Plus →
+                                <a href={`/services#${svc.target}`} className="expertise__card-link" style={{ color: 'var(--accent-purple-light)', fontWeight: 'bold' }}>
+                                    Voir plus →
                                 </a>
                             </div>
                         </article>
