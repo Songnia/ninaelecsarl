@@ -28,8 +28,8 @@ export default function Footer() {
                     <ul>
                         <li><Link to="/" className="footer__link">Accueil</Link></li>
                         <li><Link to="/services" className="footer__link">Services</Link></li>
-                        <li><Link to="/projects" className="footer__link">Projets</Link></li>
-                        <li><Link to="/how-it-works" className="footer__link">Méthodologie</Link></li>
+                        <li><Link to="/clients" className="footer__link">Projets</Link></li>
+                        <li><Link to="/how-it-works" className="footer__link">Approche</Link></li>
                         <li><Link to="/blog" className="footer__link">Actualités</Link></li>
                         <li><Link to="/contact" className="footer__link">Nous Contacter</Link></li>
                     </ul>

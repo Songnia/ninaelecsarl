@@ -10,11 +10,11 @@ import step4 from '../assets/img/blog_featured_4.svg'
 import step5 from '../assets/img/service_digital_design.svg'
 
 const steps = [
-    { id: 1, title: 'Étude Préliminaire', desc: 'Analyse des besoins du client et étude de faisabilité technique du projet.', img: step1 },
-    { id: 2, title: 'Conception & Plans', desc: 'Élaboration des plans détaillés (architecture ou électricité) et des dossiers techniques.', img: step2 },
-    { id: 3, title: 'Execution & Chantier', desc: 'Lancement de la phase de réalisation avec des techniciens qualifiés et engagés.', img: step3 },
-    { id: 4, title: 'Contrôle & Validation', desc: 'Tests rigoureux et vérification de la conformité aux normes en vigueur.', img: step4 },
-    { id: 5, title: 'Suivi & Maintenance', desc: 'Accompagnement après livraison pour garantir la pérennité des installations.', img: step5 },
+    { id: 1, title: 'Analyse & Étude', desc: 'Expertise technique approfondie pour identifier les besoins réels et les contraintes réglementaires de votre projet.', img: step1 },
+    { id: 2, title: 'Conception & Ingénierie', desc: 'Élaboration de plans d\'exécution précis et de solutions architecturales ou électriques optimisées.', img: step2 },
+    { id: 3, title: 'Coordination & Travaux', desc: 'Pilotage rigoureux du chantier avec des techniciens spécialisés respectant les délais et les budgets.', img: step3 },
+    { id: 4, title: 'Audit & Mise aux Normes', desc: 'Contrôles de conformité stricts pour garantir la sécurité totale et la longévité de vos installations.', img: step4 },
+    { id: 5, title: 'Suivi & Expertise', desc: 'Accompagnement post-livraison et maintenance préventive pour assurer une performance durable.', img: step5 },
 ]
 
 export default function HowItWorksPage() {
@@ -25,9 +25,13 @@ export default function HowItWorksPage() {
                 <img src={starLime} alt="Star" className="animate-spin" style={{ position: 'absolute', top: '15%', left: '20%', width: '60px' }} />
                 <img src={starPurple} alt="Star" className="animate-float" style={{ position: 'absolute', bottom: '10%', right: '15%', width: '40px' }} />
                 <div className="container hiw-hero__inner">
-                    <span className="hiw-hero__eyebrow" style={{ color: 'var(--accent-lime)' }}>Notre Méthodologie</span>
-                    <h1 className="hiw-hero__title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', color: 'var(--color-dark)' }}>Comment Nous <br />Garantissons <span style={{ color: 'transparent', WebkitTextStroke: '2px var(--accent-purple)' }}>Votre Succès</span></h1>
-                    <p className="hiw-hero__subtitle" style={{ maxWidth: '600px', margin: '1rem auto' }}>Chaque projet est traité avec une rigueur technique absolue pour garantir sécurité, esthétique et durabilité.</p>
+                    <span className="hiw-hero__eyebrow" style={{ color: 'var(--accent-lime)', textTransform: 'uppercase', letterSpacing: '0.15em', fontWeight: 'bold' }}>Notre Méthodologie</span>
+                    <h1 className="hiw-hero__title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', color: 'var(--color-dark)', fontWeight: '900' }}>
+                        Une Approche <br />Pluridisciplinaire <span style={{ color: 'transparent', WebkitTextStroke: '2px var(--accent-purple)' }}>Maîtrisée</span>
+                    </h1>
+                    <p className="hiw-hero__subtitle" style={{ maxWidth: '600px', margin: '1.5rem auto', fontSize: '1.25rem', color: 'var(--text-secondary)' }}>
+                        De la conception à la maintenance, nous appliquons une rigueur d'ingénierie absolue pour chaque projet d'électricité et d'architecture.
+                    </p>
                 </div>
             </section>
 
