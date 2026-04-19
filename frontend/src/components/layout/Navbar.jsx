@@ -7,6 +7,8 @@ import logoNina from '../../assets/branding/logo-nina.webp'
 const navLinks = [
     { label: 'Accueil', to: '/' },
     { label: 'Services', to: '/services' },
+    { label: 'Projets', to: '/projects' },
+    { label: 'Méthodologie', to: '/how-it-works' },
     { label: 'Actualités', to: '/blog' },
     { label: 'Nous Contacter', to: '/contact' },
 ]

@@ -10,6 +10,7 @@ import './styles/variables.css'
 import './styles/globals.css'
 
 import HowItWorksPage from './pages/HowItWorksPage'
+import ProjectsPage from './pages/ProjectsPage'
 import ClientPage from './pages/ClientPage'
 import FAQPage from './pages/FAQPage'
 import ScrollToHash from './hooks/ScrollToHash'
@@ -46,6 +47,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/how-it-works" element={<HowItWorksPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/clients" element={<ClientPage />} />
                 <Route path="/faq" element={<FAQPage />} />
