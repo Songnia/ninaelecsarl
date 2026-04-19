@@ -40,15 +40,15 @@ export default function HowItWorksPage() {
                 <div className="container">
                     <div className="timeline" style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
                         {steps.map((step, index) => (
-                            <article key={step.id} className={`timeline-step ${index % 2 !== 0 ? 'timeline-step--reverse' : ''}`} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center', direction: index % 2 !== 0 ? 'rtl' : 'ltr' }}>
-                                <div className="timeline-step__content" style={{ direction: 'ltr' }}>
-                                    <span className="timeline-step__number" style={{ fontSize: '4rem', fontWeight: '900', color: 'var(--accent-lime)', opacity: 0.8 }}>0{step.id}</span>
-                                    <h2 className="timeline-step__title" style={{ fontSize: '2rem', margin: '0.5rem 0', color: 'var(--color-white)' }}>{step.title}</h2>
-                                    <p className="timeline-step__desc" style={{ color: 'var(--text-on-dark-muted)' }}>{step.desc}</p>
+                            <article key={step.id} className={`timeline-step ${index % 2 !== 0 ? 'timeline-step--reverse' : ''}`}>
+                                <div className="timeline-step__content">
+                                    <span className="timeline-step__number">0{step.id}</span>
+                                    <h2 className="timeline-step__title">{step.title}</h2>
+                                    <p className="timeline-step__desc">{step.desc}</p>
                                 </div>
 
-                                <div className="timeline-step__image" style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '16/9', direction: 'ltr' }}>
-                                    <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <div className="timeline-step__image">
+                                    <img src={step.img} alt={step.title} />
                                 </div>
                             </article>
                         ))}
