@@ -25,8 +25,8 @@ export default function ContactPage() {
                 <img src={starLime} alt="Star" className="animate-float" style={{ position: 'absolute', top: '20%', right: '15%', width: '50px' }} />
                 <img src={starYellow} alt="Star" className="animate-spin" style={{ position: 'absolute', bottom: '15%', left: '10%', width: '30px' }} />
                 <div className="container contact-hero__inner">
-                    <span className="contact-hero__eyebrow" style={{ color: 'var(--accent-purple)' }}>Entrer en Contact</span>
-                    <h1 className="contact-hero__title" style={{ color: 'var(--color-dark)' }}>Donnons Vie à <br />Vos Projets.</h1>
+                    <span className="contact-hero__eyebrow">Entrer en Contact</span>
+                    <h1 className="contact-hero__title">Donnons Vie à <br />Vos Projets.</h1>
                     <p className="contact-hero__subtitle">
                         Que ce soit pour une installation électrique complexe, un aménagement d'intérieur ou une formation technique, Nina Elec SARL est à votre service.
                     </p>

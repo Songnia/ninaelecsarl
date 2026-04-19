@@ -53,11 +53,11 @@ export default function BlogPage() {
 
                 <div className="container blog-hero__inner">
                     <span className="blog-hero__eyebrow">Actualités & Projets</span>
-                    <h1 className="blog-hero__title" style={{ color: 'var(--color-dark)' }}>
+                    <h1 className="blog-hero__title">
                         Nos Dernières <br />
                         <span style={{ color: 'transparent', WebkitTextStroke: '1px var(--color-purple)' }}>Actions de Formation</span>
                     </h1>
-                    <p className="blog-hero__subtitle" style={{ maxWidth: '600px', margin: '0 auto' }}>
+                    <p className="blog-hero__subtitle">
                         Retrouvez les moments forts de nos interventions techniques, nos formations et notre engagement pour l'excellence.
                     </p>
                 </div>
