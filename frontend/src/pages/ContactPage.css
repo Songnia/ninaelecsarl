@@ -25,6 +25,7 @@
     font-weight: var(--fw-black);
     line-height: 1.05;
     margin-bottom: var(--space-4);
+    color: var(--color-white);
 }
 
 .contact-hero__subtitle {
