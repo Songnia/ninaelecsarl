@@ -12,10 +12,23 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer__brand {
+/* Brand and Logo Styling */
+.footer__logo-group {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__logo {
+    height: 50px;
+}
+
+.footer__name {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-white);
+    letter-spacing: 0.05em;
 }
 
 .footer__tagline {
@@ -25,6 +38,7 @@
     line-height: 1.6;
 }
 
+/* Column and Link Styling */
 .footer__heading {
     font-family: var(--font-display);
     font-size: var(--text-sm);
@@ -39,6 +53,9 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
+    list-style: none; /* No dots */
+    padding: 0;
+    margin: 0;
 }
 
 .footer__link {
@@ -46,6 +63,8 @@
     color: var(--text-on-dark-muted);
     transition: color var(--transition-fast);
     cursor: pointer;
+    text-decoration: none;
+    display: block;
 }
 
 .footer__link:hover {
@@ -53,9 +72,9 @@
     opacity: 1;
 }
 
-/* Bottom bar */
+/* Bottom Bar and Copyright */
 .footer__bottom {
-    padding: var(--space-6) 0;
+    padding: var(--space-8) 0;
 }
 
 .footer__bottom-inner {
@@ -63,14 +82,18 @@
     align-items: center;
     justify-content: space-between;
     font-size: var(--text-xs);
-    color: var(--text-on-dark-muted);
+    color: var(--text-muted);
 }
 
-.footer__legal {
-    display: flex;
-    gap: var(--space-6);
+.footer__address {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
 }
 
+/* RESPONSIVE DESIGN */
+
+/* Tablets / Medium Mobile */
 @media (max-width: 768px) {
     .footer__inner {
         grid-template-columns: 1fr 1fr;
@@ -79,11 +102,47 @@
 
     .footer__brand {
         grid-column: 1 / -1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo-group {
+        justify-content: center;
+    }
+
+    .footer__tagline {
+        max-width: 100%;
+        margin: 0 auto 1rem;
     }
 
     .footer__bottom-inner {
         flex-direction: column;
-        gap: var(--space-3);
+        gap: 1.5rem;
         text-align: center;
+    }
+}
+
+/* Smartphone / Very Small Screens */
+@media (max-width: 480px) {
+    .footer__inner {
+        grid-template-columns: 1fr; /* Stack everything vertically */
+        text-align: center;
+        gap: var(--space-10);
+    }
+
+    .footer__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__col ul {
+        align-items: center;
+    }
+
+    .footer__name {
+        font-size: 1.25rem;
     }
 }

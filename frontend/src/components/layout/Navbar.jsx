@@ -5,10 +5,10 @@ import './Navbar.css'
 import logoNina from '../../assets/branding/logo-nina.webp'
 
 const navLinks = [
+    { label: 'Accueil', to: '/' },
     { label: 'Services', to: '/services' },
-    { label: 'Réalisations', to: '/clients' },
-    { label: 'Blog', to: '/blog' },
-    { label: 'FAQ', to: '/faq' },
+    { label: 'Actualités', to: '/blog' },
+    { label: 'Nous Contacter', to: '/contact' },
 ]
 
 export default function Navbar() {

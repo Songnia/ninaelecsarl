@@ -56,10 +56,13 @@ export default function BlogPreviewSection() {
                                     <h3 className="blog-card__title">{post.title}</h3>
                                     <p className="blog-card__excerpt">{post.excerpt}</p>
                                     <div className="blog-card__meta">
-                                        <span>{formatDate(post.publishedDate)}</span>
+                                        <span>{formatDate(post.date)}</span>
                                         <span>·</span>
                                         <span>{post.readTime || '5'} min de lecture</span>
                                     </div>
+                                    <Link to={`/blog#${post.id}`} className="blog-card__link">
+                                        Voir plus →
+                                    </Link>
                                 </div>
                             </article>
                         ))

@@ -12,6 +12,7 @@ import './styles/globals.css'
 import HowItWorksPage from './pages/HowItWorksPage'
 import ClientPage from './pages/ClientPage'
 import FAQPage from './pages/FAQPage'
+import ScrollToHash from './hooks/ScrollToHash'
 
 // Simple 404 fallback
 function NotFoundPage() {
@@ -27,7 +28,7 @@ function NotFoundPage() {
 export default function App() {
     return (
         <BrowserRouter>
-            {/* Skip to content — accessibility */}
+            <ScrollToHash />
             <a className="skip-link" href="#main-content" style={{
                 position: 'absolute', top: '-100px', left: 0,
                 background: 'var(--accent-lime)', color: 'var(--text-primary)',

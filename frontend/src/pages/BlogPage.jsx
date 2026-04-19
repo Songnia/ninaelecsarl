@@ -73,7 +73,7 @@ export default function BlogPage() {
                     {featuredPost && (
                         <section className="blog-featured section" aria-label="Featured post" style={{ paddingBottom: '2rem' }}>
                             <div className="container">
-                                <article className="featured-post hover-lift" style={{ cursor: 'pointer' }}>
+                                <article id={featuredPost.id} className="featured-post hover-lift" style={{ cursor: 'pointer' }}>
                                     {/* Gallery Grid */}
                                     <BlogGalleryGrid 
                                         title="Illustrations de la Formation" 
@@ -89,11 +89,6 @@ export default function BlogPage() {
                                             <span>{formatDate(featuredPost.publishedDate)}</span>
                                             <span>·</span>
                                             <span>{featuredPost.readTime} min de lecture</span>
-                                        </div>
-                                        <div style={{ marginTop: '2rem' }}>
-                                            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', fontSize: '1.1rem', marginBottom: '2rem' }}>
-                                                {featuredPost.excerpt}
-                                            </p>
                                         </div>
                                         <a href="#" className="btn btn--outline" style={{ display: 'inline-block', marginTop: '1rem', width: 'fit-content' }}>Read Deep Dive</a>
                                     </div>

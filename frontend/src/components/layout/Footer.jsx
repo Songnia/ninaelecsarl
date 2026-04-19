@@ -13,11 +13,11 @@ export default function Footer() {
 
                 {/* Brand column */}
                 <div className="footer__brand">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                        <img src={logoNina} alt="Nina Elec SARL Logo" style={{ height: '50px' }} />
-                        <span style={{ fontSize: '1.5rem', fontWeight: '900', color: 'var(--color-white)', letterSpacing: '0.05em' }}>NINA ELEC SARL</span>
+                    <div className="footer__logo-group">
+                        <img src={logoNina} alt="Nina Elec SARL Logo" className="footer__logo" />
+                        <span className="footer__name">NINA ELEC SARL</span>
                     </div>
-                    <p className="footer__tagline" style={{ color: 'var(--text-on-dark-muted)' }}>
+                    <p className="footer__tagline">
                         Nina Elec SARL — Bureau d'études pluridisciplinaire : Génie Électrique, Architecture d'Intérieur & Formation.
                     </p>
                 </div>
@@ -26,10 +26,10 @@ export default function Footer() {
                 <div className="footer__col">
                     <h4 className="footer__heading" style={{ color: 'var(--color-white)' }}>Navigation</h4>
                     <ul>
-                        <li><Link to="/" className="footer__link">Home</Link></li>
+                        <li><Link to="/" className="footer__link">Accueil</Link></li>
                         <li><Link to="/services" className="footer__link">Services</Link></li>
-                        <li><Link to="/blog" className="footer__link">Intelligence (Blog)</Link></li>
-                        <li><Link to="/contact" className="footer__link">Init Contact</Link></li>
+                        <li><Link to="/blog" className="footer__link">Actualités</Link></li>
+                        <li><Link to="/contact" className="footer__link">Nous Contacter</Link></li>
                     </ul>
                 </div>
 
@@ -58,10 +58,10 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="footer__bottom">
-                <div className="container footer__bottom-inner" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-                    <div style={{ color: 'var(--text-muted)', maxWidth: '400px' }}>
+                <div className="container footer__bottom-inner">
+                    <div className="footer__copyright">
                         <p>© {year} Nina Elec SARL. Tous droits réservés.</p>
-                        <p style={{ fontSize: '0.8rem', marginTop: '0.5rem' }}>
+                        <p className="footer__address">
                             Makepe entrée Marie Lumière, Douala, Cameroun<br />
                             Lun-Ven: 08:00 - 18:00 | Sam: 09:00 - 14:30
                         </p>
